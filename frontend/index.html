@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6d43a8">
+  <meta name="description" content="Fashion Store — moda feminina e masculina com estilo e personalidade.">
+  <title>FASHION STORE | Vista seu estilo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">FASHION STORE <span>•</span> MODA PARA TODOS OS ESTILOS <span>•</span> ENCONTRE SUA PRÓXIMA PEÇA FAVORITA</div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Fashion Store início">
+      <span class="brand-mark">F</span>
+      <span class="brand-name">FASHION<span>STORE</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#colecao">Coleção</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#painel">Gerenciar loja</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="open-search" aria-label="Pesquisar"><span class="icon">⌕</span></button>
+      <button class="text-icon-button" id="account-button"><span class="icon">♙</span><span id="account-label">Entrar</span></button>
+      <button class="text-icon-button cart-button" id="cart-button"><span class="icon">♡</span><span>Sacola</span><b id="cart-count">0</b></button>
+      <button class="mobile-menu-button" id="mobile-menu-button" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> NOVA COLEÇÃO • 2026</span>
+        <h1>Vista o que<br><em>faz você</em> ser você.</h1>
+        <p>Peças que acompanham seu ritmo, valorizam sua personalidade e deixam cada dia com a sua cara.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#colecao">EXPLORAR COLEÇÃO <span>↗</span></a>
+          <a class="underlined-link" href="#sobre">Conheça a Fashion Store</a>
+        </div>
+        <div class="hero-note"><span class="note-star">✳</span><span>ESTILO SEM REGRAS.<br><strong>DO SEU JEITO.</strong></span></div>
+      </div>
+      <div class="hero-art" aria-label="Destaque da coleção Fashion Store">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-circle">F<span>S</span></div>
+        <div class="art-label label-top">NEW<br>MOOD</div>
+        <div class="art-label label-bottom">LOOKS PARA<br>TODOS OS DIAS</div>
+        <div class="art-spark spark-one">✳</div><div class="art-spark spark-two">✦</div>
+        <div class="hero-sticker">YOUR<br>STYLE<br>YOUR RULES</div>
+      </div>
+      <div class="hero-bottom"><span>01 — 03</span><span class="hero-line"></span><span>FASHION STORE / EST. 2026</span></div>
+    </section>
+
+    <section class="trust-strip" aria-label="Diferenciais">
+      <div><span>✦</span> MODA FEMININA E MASCULINA</div>
+      <div><span>✦</span> PEÇAS PARA TODOS OS MOMENTOS</div>
+      <div><span>✦</span> SEU ESTILO, SUA ESCOLHA</div>
+    </section>
+
+    <section class="collection-section section-wrap" id="colecao">
+      <div class="section-heading">
+        <div><span class="eyebrow">ESCOLHA SEU PRÓXIMO LOOK</span><h2>Encontre seu <em>estilo.</em></h2></div>
+        <p>Uma seleção feita para inspirar<br>e combinar com você.</p>
+      </div>
+
+      <div class="collection-tools">
+        <div class="category-tabs" id="category-tabs">
+          <button class="category-tab active" data-category="all">Tudo</button>
+        </div>
+        <div class="search-box"><span>⌕</span><input id="product-search" type="search" placeholder="Buscar uma peça..." aria-label="Buscar produtos"></div>
+      </div>
+
+      <div class="api-message" id="api-message"><span class="status-dot"></span><span>Conectando à loja...</span></div>
+      <div class="product-grid" id="product-grid" aria-live="polite">
+        <div class="loading-card">Carregando coleção...</div>
+      </div>
+      <div class="empty-catalog hidden" id="empty-catalog">
+        <div class="empty-symbol">FS</div><h3>Sua vitrine está pronta para receber novidades.</h3>
+        <p>Cadastre uma categoria e seus produtos no painel ou carregue um catálogo demonstrativo para testar a loja.</p>
+        <button class="button button-purple" id="seed-demo-button">CARREGAR CATÁLOGO DEMONSTRATIVO</button>
+      </div>
+    </section>
+
+    <section class="statement-band" id="sobre">
+      <span class="statement-flower">✳</span>
+      <p>Moda não é sobre seguir tendências.<br><em>É sobre expressar quem você é.</em></p>
+      <span class="statement-caption">FASHION STORE — ESTILO PARA TODOS</span>
+    </section>
+
+    <section class="management-section section-wrap" id="painel">
+      <div class="section-heading management-heading">
+        <div><span class="eyebrow">ÁREA DE ADMINISTRAÇÃO • PROJETO ESCOLAR</span><h2>Gerencie sua <em>loja.</em></h2></div>
+        <p>Cadastre categorias, tamanhos, cores e produtos diretamente no banco de dados.</p>
+      </div>
+      <div class="management-grid">
+        <form class="management-card" id="category-form">
+          <div class="card-kicker">01 / ORGANIZAÇÃO</div><h3>Nova categoria</h3>
+          <label for="category-name">Nome da categoria</label><input id="category-name" name="nome" placeholder="Ex.: Feminino" required maxlength="100">
+          <button class="button button-outline" type="submit">SALVAR CATEGORIA <span>＋</span></button>
+          <div class="form-feedback" id="category-feedback" role="status"></div>
+        </form>
+        <form class="management-card product-form" id="product-form">
+          <div class="card-kicker">02 / CATÁLOGO</div><h3 id="product-form-title">Cadastrar produto</h3>
+          <div class="form-row"><div><label for="product-name">Nome do produto</label><input id="product-name" required maxlength="150" placeholder="Ex.: Blusa Serena"></div><div><label for="product-price">Preço (R$)</label><input id="product-price" type="number" min="0.01" step="0.01" required placeholder="89,90"></div></div>
+          <label for="product-description">Descrição</label><textarea id="product-description" rows="2" placeholder="Descreva a peça..."></textarea>
+          <div class="form-row"><div><label for="product-category">Categoria</label><select id="product-category" required><option value="">Selecione</option></select></div><div><label for="product-size">Tamanho inicial</label><select id="product-size"><option value="">Sem tamanho</option></select></div></div>
+          <div class="form-row"><div><label for="product-color">Cor inicial</label><select id="product-color"><option value="">Sem cor</option></select></div><div><label for="product-stock">Quantidade em estoque</label><input id="product-stock" type="number" min="0" value="10"></div></div>
+          <label for="product-image">Caminho da imagem (opcional)</label><input id="product-image" placeholder="Ex.: img/blusa.jpg"><small class="field-help">Coloque a imagem dentro de frontend/img e informe apenas img/nome-da-imagem.jpg.</small>
+          <div class="form-actions"><button class="button button-purple" type="submit" id="save-product-button">SALVAR PRODUTO <span>＋</span></button><button class="button button-light hidden" type="button" id="cancel-edit-button">CANCELAR</button></div>
+          <div class="form-feedback" id="product-feedback" role="status"></div>
+        </form>
+        <div class="management-card small-card">
+          <div class="card-kicker">03 / VARIEDADES</div><h3>Tamanhos e cores</h3>
+          <form id="size-form" class="mini-form"><label for="size-name">Adicionar tamanho</label><div class="inline-field"><input id="size-name" required maxlength="50" placeholder="Ex.: GG"><button type="submit" aria-label="Salvar tamanho">＋</button></div></form>
+          <form id="color-form" class="mini-form"><label for="color-name">Adicionar cor</label><div class="inline-field"><input id="color-name" required maxlength="50" placeholder="Ex.: Lilás"><input id="color-hex" class="color-input" type="color" value="#b99ad9" aria-label="Código hexadecimal da cor"><button type="submit" aria-label="Salvar cor">＋</button></div></form>
+          <div class="form-feedback" id="options-feedback" role="status"></div>
+        </div>
+      </div>
+
+      <div class="admin-list-card">
+        <div class="admin-list-heading"><div><span class="card-kicker">04 / CONTROLE</span><h3>Produtos cadastrados</h3></div><button class="refresh-button" id="refresh-admin">↻ Atualizar lista</button></div>
+        <div class="table-scroll"><table><thead><tr><th>Produto</th><th>Categoria</th><th>Preço</th><th>Ações</th></tr></thead><tbody id="admin-product-list"><tr><td colspan="4" class="table-empty">Carregando produtos...</td></tr></tbody></table></div>
+      </div>
+    </section>
+
+    <section class="account-area section-wrap" id="minha-conta">
+      <div class="section-heading"><div><span class="eyebrow">SUA EXPERIÊNCIA</span><h2>Seu espaço, <em>seu estilo.</em></h2></div></div>
+      <div class="account-panels">
+        <article class="account-panel"><span class="panel-icon">♡</span><h3>Lista de favoritos</h3><p>Guarde as peças que chamaram sua atenção.</p><button class="underlined-link" id="show-favorites">VER FAVORITOS ↗</button></article>
+        <article class="account-panel"><span class="panel-icon">▤</span><h3>Meus pedidos</h3><p>Acompanhe os pedidos registrados na sua conta.</p><button class="underlined-link" id="show-orders">VER PEDIDOS ↗</button></article>
+        <article class="account-panel"><span class="panel-icon">✧</span><h3>Atendimento</h3><p>Uma loja de projeto, feita para demonstrar uma experiência de compra completa.</p><a class="underlined-link" href="#painel">CONHECER A LOJA ↗</a></article>
+      </div>
+      <div class="account-results hidden" id="account-results"><div class="results-header"><h3 id="account-results-title">Minha área</h3><button class="close-results" id="close-results">×</button></div><div id="account-results-content"></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">F</span><span class="brand-name">FASHION<span>STORE</span></span></a><p>Vista o que faz você ser você.</p><a href="#inicio" class="back-top">VOLTAR AO TOPO ↑</a></div>
+    <div class="footer-bottom"><span>© 2026 FASHION STORE • PROJETO INTEGRADO</span><span>DESENVOLVIDO COM HTML, CSS, JAVASCRIPT, PYTHON E MYSQL</span></div>
+  </footer>
+
+  <dialog class="modal" id="account-dialog">
+    <button class="modal-close" data-close="account-dialog" aria-label="Fechar">×</button>
+    <div class="modal-intro"><span class="eyebrow">BEM-VINDA(O) À FASHION STORE</span><h2>Entre no seu <em>mundo.</em></h2><p>Entre na sua conta ou faça seu cadastro.</p></div>
+    <div class="modal-switch"><button class="switch-button active" data-account-mode="login">Entrar</button><button class="switch-button" data-account-mode="register">Criar conta</button></div>
+    <form id="login-form" class="dialog-form"><label for="login-email">E-mail</label><input id="login-email" type="email" required autocomplete="email" placeholder="seuemail@exemplo.com"><label for="login-password">Senha</label><input id="login-password" type="password" required autocomplete="current-password" placeholder="Sua senha"><button class="button button-purple" type="submit">ENTRAR NA CONTA</button><div class="form-feedback" id="login-feedback" role="status"></div></form>
+    <form id="register-form" class="dialog-form hidden"><label for="register-name">Nome completo</label><input id="register-name" required maxlength="150" autocomplete="name" placeholder="Seu nome"><label for="register-email">E-mail</label><input id="register-email" type="email" required autocomplete="email" placeholder="seuemail@exemplo.com"><label for="register-phone">Telefone</label><input id="register-phone" maxlength="20" autocomplete="tel" placeholder="(00) 00000-0000"><label for="register-password">Senha</label><input id="register-password" type="password" minlength="6" required autocomplete="new-password" placeholder="Mínimo de 6 caracteres"><button class="button button-purple" type="submit">CRIAR MINHA CONTA</button><div class="form-feedback" id="register-feedback" role="status"></div></form>
+  </dialog>
+
+  <dialog class="modal product-modal" id="product-dialog">
+    <button class="modal-close" data-close="product-dialog" aria-label="Fechar">×</button>
+    <div id="product-detail-content"></div>
+  </dialog>
+
+  <dialog class="modal cart-modal" id="cart-dialog">
+    <button class="modal-close" data-close="cart-dialog" aria-label="Fechar">×</button>
+    <div class="modal-intro"><span class="eyebrow">SUAS ESCOLHAS</span><h2>Sacola de <em>compras.</em></h2></div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-summary"><span>Total</span><strong id="cart-total">R$ 0,00</strong></div>
+    <button class="button button-purple full-button" id="checkout-button">FINALIZAR PEDIDO <span>↗</span></button>
+    <p class="small-print">Demonstração escolar: o pedido e o pagamento pendente são registrados no banco. Não há cobrança real.</p>
+  </dialog>
+
+  <dialog class="modal checkout-modal" id="checkout-dialog">
+    <button class="modal-close" data-close="checkout-dialog" aria-label="Fechar">×</button>
+    <div class="modal-intro"><span class="eyebrow">ÚLTIMA ETAPA</span><h2>Dados de <em>entrega.</em></h2><p>Informe o endereço para registrar seu pedido.</p></div>
+    <form id="checkout-form" class="dialog-form">
+      <label for="address-cep">CEP</label><input id="address-cep" required maxlength="9" placeholder="00000-000">
+      <label for="address-street">Rua</label><input id="address-street" required maxlength="150" placeholder="Nome da rua">
+      <div class="form-row"><div><label for="address-number">Número</label><input id="address-number" required maxlength="20" placeholder="123"></div><div><label for="address-state">Estado (UF)</label><input id="address-state" required maxlength="2" placeholder="SP"></div></div>
+      <label for="address-city">Cidade</label><input id="address-city" required maxlength="100" placeholder="Sua cidade">
+      <label for="payment-method">Forma de pagamento (simulação)</label><select id="payment-method"><option>Pix</option><option>Cartão</option><option>Boleto</option></select>
+      <button class="button button-purple" type="submit">CONFIRMAR PEDIDO</button><div class="form-feedback" id="checkout-feedback" role="status"></div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
