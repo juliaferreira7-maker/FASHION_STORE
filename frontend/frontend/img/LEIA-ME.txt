@@ -1,0 +1,7 @@
+IMAGENS DOS PRODUTOS
+
+Coloque nesta pasta as imagens dos produtos.
+No painel da loja, informe o caminho relativo a esta pasta, por exemplo:
+img/blusa-serena.jpg
+
+Use arquivos JPG, PNG ou WEBP.
